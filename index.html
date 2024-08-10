@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Club de Fans de Quentin Tarantino</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="peliculas.html">Peliculas</a>
+                <a href="premios.html">Premios</a>
+                <a href="cameos.html">Cameos</a>
+                <a href="biografia.html">Biografia</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', () => {document.querySelector('.nav-links').classList.toggle('nav-links-active');
+            });
+        </script>
+    </header>
+
+    <h1 class="titulo">Bienvenido al Club de Fans de Quentin Tarantino</h1>
+
+    <main class="contenedor">
+        <img src="media/quentin-tarantino.webp" alt="Quentin Tarantino" class="imagen-inicio">
+            <div class="contenedor-texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias inventore eveniet doloribus autem vel possimus? Ratione fugit similique nam fugiat accusamus, quaerat voluptate magni itaque dolores dolore ipsum obcaecati!</p>
+            </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024</p>
+    </footer>
+
 </body>
 </html>
