@@ -71,10 +71,19 @@
     .nav-toggle {
         display: flex;
     }
+
+    .col-media {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 .titulo {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
 }
 
 body {
@@ -93,45 +102,28 @@ footer {
     margin-top: auto;
 }
 
-.contenedor {
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
+.grid.item {
+    border: 1px solid black;
 }
 
-.imagen-inicio {
-    width: 600px;
-    height: 500px;
-    margin-right: 20px;
+.first-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.imagen-peliculas {
-    width: 600px;
-    height: 400px;
-    margin-right: 20px;
+.imagen-grid {
+    width: 40%;
+    height: 100%;
 }
 
-.imagen-premios {
-    width: 500px;
-    height: 600px;
-    margin-right: 20px;
+.texto-grid {
+    width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
 }
 
-.imagen-cameos {
-    width: 650px;
-    height: 400px;
-    margin-right: 20px;
-}
 
-.imagen-biografia {
-    width: 450px;
-    height: 500px;
-    margin-right: 20px;
-}
-
-.contenedor-texto {
-    flex: 1;
-    margin: 50px;
+h3 {
+    color: aquamarine;
 }
