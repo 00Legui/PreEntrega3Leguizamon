@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: cursive;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +38,8 @@
   text-decoration: none;
   padding: 10px 15px;
   transition: background 0.3s;
+  z-index: 3;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .nav-links a:hover {
@@ -37,7 +51,7 @@
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 
 .nav-toggle span {
@@ -48,45 +62,49 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: #333;
-    position: absolute;
-    top: 50px;
-    left: 0;
-  }
-  .nav-links a {
-    padding: 10px 0;
-  }
-  .nav-links-active {
-    display: flex;
-  }
-  .nav-toggle {
-    display: flex;
-  }
-  .col-media {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 30px;
-  }
-}
-.titulo {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  color: aqua;
+.slider-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-body {
-  background-color: #575757;
-  font-family: Arial, sans-serif;
+.slider {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  aspect-ratio: 16/9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 1px 2px 3px 4px hsla(0, 0%, 0%, 0.25);
+  border-radius: 10px;
+}
+
+.image {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  translate: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-button {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  border-radius: 50%;
+}
+
+.slider-button:hover {
+  opacity: 1;
 }
 
 footer {
@@ -97,29 +115,17 @@ footer {
   margin-top: auto;
 }
 
-.grid.item {
-  border: 1px solid black;
+.container-premios {
+  padding: 20px;
 }
 
-.first-item {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.imagen-normalizada {
+  height: 95vh;
 }
 
-.imagen-grid {
-  width: 40%;
-  height: 100%;
-}
-
-.texto-grid {
-  width: 60%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: large;
-  font-weight: bold;
-}
-
-h3 {
-  color: aquamarine;
+.text-norm {
+  background-color: black;
+  background: radial-gradient(circle, rgb(0, 0, 0) 15%, rgba(214, 3, 3, 0) 70%);
 }
 
 /*# sourceMappingURL=style.css.map */
