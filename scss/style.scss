@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #575757;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .nav-links-active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .col-media {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+}
+
+body {
+    background-color: #575757;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    margin-top: auto;
+}
+
+.grid.item {
+    border: 1px solid black;
+}
+
+.first-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.imagen-grid {
+    width: 40%;
+    height: 100%;
+}
+
+.texto-grid {
+    width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+h3 {
+    color: aquamarine;
+}
