@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .nav-links-active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caja_home {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .caja_home h1 {
+        display: flex;
+        max-width: 100%;
+        font-size: 50px;
+    }
+
+    .caja_home p {
+        display: flex;
+    }
+
+
+}
