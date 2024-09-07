@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 40px 20px;
+  padding: 60px 40px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -248,7 +248,7 @@ footer {
   z-index: 1;
 }
 .home .caja_home h1 {
-  font-size: 180px;
+  font-size: 60px;
   color: #104fd6;
 }
 .home .caja_home p {
@@ -313,6 +313,9 @@ footer {
   .home {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
   .caja_home {
     display: flex;
@@ -327,6 +330,14 @@ footer {
   }
   .caja_home p {
     display: flex;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
 }
 

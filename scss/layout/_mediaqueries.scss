@@ -26,6 +26,9 @@
     .home {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
 
     .caja_home {
@@ -45,5 +48,14 @@
         display: flex;
     }
 
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
 
 }
